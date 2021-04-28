@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Sweetkin Soaps</title>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+            <!-- link to the external stylesheet -->
+            <link rel="stylesheet" href="style-sheet.css">
+
+            <style>
+                /* styling for al images in the image class */
+                .image {
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    width: 750px;
+                    height: 500px;
+                    border: 10px solid #dddddd;
+                    position: relative;
+                    top: -150px;
+                }
+
+                /* styling and transition (when hovered) for the first ingredients list */
+                #ingredients {
+                    position: absolute;
+                    left: 20%;
+                    bottom: 16%;
+                    width: 760px;
+                    height: 510px;
+                    background-color: #dddddd;
+                    z-index: 1;
+                    opacity: 0;
+                    transition: opacity 1s;
+                    z-index: 1;
+                    text-align: center;
+                }
+
+                #ingredients:hover {
+                    opacity: 1;
+                }
+
+                /* styling and transition (when hovered) for the second ingredients list */
+                #ingredients2 {
+                    position: relative;
+                    left: 19.5%;
+                    top: -685px;
+                    width: 760px;
+                    height: 510px;
+                    background-color: #dddddd;
+                    z-index: 1;
+                    opacity: 0;
+                    transition: opacity 1s;
+                    z-index: 1;
+                    text-align: center;
+                }
+
+                #ingredients2:hover {
+                    opacity: 1;
+                }
+
+                /* paragraph styling */
+                p {
+                    position: relative;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 750px;
+                    color: #dddddd;
+                }
+
+                /* list and header styling for the ingredients lists */
+                #list {
+                    position: relative;
+                    top: 100px;
+                    right: 20px;
+                    list-style-type: none;
+                }
+
+                #header {
+                    position: relative;
+                    top: 100px;
+                }
+
+                #list2 {
+                    position: relative;
+                    top: 125px;
+                    right: 20px;
+                    list-style-type: none;
+                }
+
+                #header2 {
+                    position: relative;
+                    top: 125px;
+                }
+            </style>
+        </head>
+
+        <body>
+            <h1>Our Products</h1>
+
+            <!-- navigation links -->
+            <nav>
+                <div class="navigation">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <br>
+                <div class="navigation">
+                    <a href="products.html">Products</a>
+                </div>
+
+                <br>
+                <div class="navigation">
+                    <a href="about.html">About</a>
+                </div>
+            </nav>
+
+            <!-- image and ingreddients list -->
+            <img src="acne-soap.jpg" alt="Acne Soap" class="image">
+
+            <div id="ingredients">
+                <h3 id="header">Ingredients:</h3>
+                <ul id="list">
+                    <li>Olive Fruit Oil</li>
+                    <li>Water</li>
+                    <li>Coconut Oil</li>
+                    <li>Palm Oil</li>
+                    <li>Lye</li>
+                    <li>Castor Seed Oil</li>
+                    <li>Shea Butter Fruit</li>
+                    <li>Eucalyptus Leaf Oil</li>
+                    <li>Orange Peel Oil</li>
+                    <li>Fullers Earth Clay</li>
+                    <li>Kelp Powder</li>
+                    <li>Myrrh Gum Powder</li>
+                </ul>
+            </div>
+
+            <!-- product description -->
+            <p style="top: -100px;">
+                This is a soap that is great for using on bad acne. It works really well to clear up
+                any acne and can be used on a daily basis. It might not smell great, but it works well
+                and has no artificial scents and it is made of all natural ingredients.
+            </p>
+
+            <!-- image and ingredients list -->
+            <img src="coffee-soap.jpg" alt="Coffee Soap" class="image" style="margin-top: 100px;">
+
+            <div id="ingredients2">
+                <h3 id="header2">Ingredients:</h3>
+                <ul id="list2">
+                    <li>Olive Fruit Oil</li>
+                    <li>Water</li>
+                    <li>Coconut Oil</li>
+                    <li>Coffee Grounds</li>
+                    <li>Palm Oil</li>
+                    <li>Lye</li>
+                    <li>Shea Butter Fruit</li>
+                    <li>Lemon Peel Oil</li>
+                </ul>
+            </div>
+
+            <!-- prooducit description -->
+            <p style="top: -650px;">
+                This soap is great for getting rid of bad smells on your hands. So if you have any sort of onion smell
+                or any other bad smell like that. This will do the trick. Like all our other soaps,
+                this is made from all natural ingredients and no artificial scents.
+            </p>
+        </body>
+    </html>

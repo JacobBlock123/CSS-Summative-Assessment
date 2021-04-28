@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Sweetkin Soaps</title>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
+
+            <!-- link to external stylesheet -->
+            <link rel="stylesheet" href="style-sheet.css">
+
+            <style> 
+
+                /* styling for the image and about paragraph */
+                #par {
+                    position: relative;
+                    top: -125px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 750px;
+                }
+
+                #image {
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    width: 750px;
+                    height: 500px;
+                    border: 10px solid #dddddd;
+                    position: relative;
+                    top: -150px;
+                    animation-name: fade-in;
+                    animation-duration: 2s;
+                }
+
+                /* fade in animation for the image */
+                @keyframes fade-in {
+                    0% {opacity: 0; top: -200px;}
+                    100% {opacity: 1; top: -150px;}
+                }
+
+                /* styling for the contact information div and paragraphs */
+                #contact {
+                    columns: 3;
+                    column-rule: 3px solid #dddddd;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    text-align: center;
+                }
+
+                #contact p {
+                    margin: 0px auto;
+                }
+            </style>
+        </head>
+
+        <body>
+            <h1>About Us</h1>
+
+            <!-- navigation links -->
+            <nav>
+                <div class="navigation">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <br>
+                <div class="navigation">
+                    <a href="products.html">Products</a>
+                </div>
+
+                <br>
+                <div class="navigation">
+                    <a href="about.html">About</a>
+                </div>
+            </nav>
+
+            <img src="soaps.jpg" alt="Soaps lined up" id="image">
+
+            <p id="par">
+                Sweetkin soaps is run by two people. Sheri Block, the soap maker and seller, and
+                Jacob Block, the website desginer. We work hard to deliver a good website and good
+                products to our customers and all of our soaps are naturally home-made with no artificial
+                scents. Our business is centrally located in Winnipeg and we hope to grow and with your 
+                support we can. Next time you need soap, please consider purchasing from us
+                to help support a small business. Thanks for your suppport.
+            </p>
+
+            <!-- contact information -->
+            <div id="contact">
+                <p style="position: static;">Email us at: sweetkinsoaps@gmail.com</p>
+
+                <p style="position: static;">Call us at: 204-558-3653</p>
+
+                <p style="position: static;"> Or follow us on instagram: Sweetkin Soaps</p>
+            </div>
+        </body>
+    </html>
